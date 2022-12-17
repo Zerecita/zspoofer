@@ -18,7 +18,7 @@ def main():
     if name == '':
         os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587"')
     else:
-        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" -o message-header="From '+name+'<'+sender+'>"')
+        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" -o message-header="From: '+name+' <'+sender+'>"')
     
 if __name__ == '__main__':
     main()
