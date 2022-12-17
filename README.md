@@ -23,8 +23,8 @@ def main():
  / /_ ___) |  __/| |_| | |_| |  _|  
 /____|____/|_|    \___/ \___/|_|    ''', 'red'))
     print(colored("\n\nTool developed by zereza\n\n", 'yellow', attrs=['bold']))
-    username = "USERNAME FROM SENDINBLUE HERE"
-    password = "PASSWORD FROM SENDINBLUE HERE"
+    username = "USERNAME FROM SENDINBLUE HERE" //   <------------------- HERE
+    password = "PASSWORD FROM SENDINBLUE HERE" //   <------------------- HERE
     target = input(colored("The target's email  ---->    ", 'green'))
     name = input(colored("\n\nThe sender's name [OPTIONAL]  ---->   ", 'green'))
     sender = input(colored("\n\nThe sender of the email   ---->   ", 'green'))
