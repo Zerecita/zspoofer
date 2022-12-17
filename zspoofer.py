@@ -17,10 +17,10 @@ def main():
     message = input(colored("\n\nThe email message  ---->   ", 'green'))
     
     if name == '':
-        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" &>/dev/null')
+        os.system('sendemail -xu \"'+username+'\" -xp \"'+password+'\" -f \"'+sender+'\" -t \"'+target+'\" -u \"'+subject+'\" -m \"'+message+'\" -s "smtp-relay.sendinblue.com:587" &>/dev/null')
         print(colored('Sent :)', 'yellow'))
     else:
-        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" -o message-header="From: '+name+' <'+sender+'>" &>/dev/null')
+        os.system('sendemail -xu \"'+username+'\" -xp \"'+password+'\" -f \"'+sender+'\" -t \"'+target+'\" -u \"'+subject+'\" -m \"'+message+'\" -s "smtp-relay.sendinblue.com:587" -o message-header="From: '+name+' <'+sender+'>" &>/dev/null')
         print(colored('Sent :)', 'yellow'))
     
 if __name__ == '__main__':
