@@ -11,7 +11,7 @@ pip3 install -r requirements.txt
 ## Usage:
 You must have an account in [www.sendinblue.com](https://www.sendinblue.com)
 
-In order to use the script you will need to modify the script and put your [sendinblue](https://www.sendinblue.com) credentials here:
+In order to use the script you will need to modify the script and put your [sendinblue](https://www.sendinblue.com) SMTP API credentials here:
 ```python
 #!/usr/bin/env python3
 import os
