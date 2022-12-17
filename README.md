@@ -8,7 +8,8 @@ git clone https://github.com/0x9B0x7A/zspoofer/
 ```
 ## Usage:
 You must have an account in [sendinblue.com](https://www.sendinblue.com).
-In order to use the script you will need to modify the script and put your sendinblue credentials.
+
+In order to use the script you will need to modify the script and put your [sendinblue](https://www.sendinblue.co) credentials here:
 ```python
 #!/usr/bin/python3/env
 import os
