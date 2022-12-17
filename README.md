@@ -3,6 +3,7 @@ Email spoofer by zereza
 
 ## Installation:
 ```bash
+sudo apt install sendemail
 git clone https://github.com/0x9B0x7A/zspoofer/
 ```
 ## Usage:
