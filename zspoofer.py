@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 import os
+from termcolor import colored
 def main():
-    print(''' _________  ____   ___   ___  _____ 
+    print(colored(''' _________  ____   ___   ___  _____ 
 |__  / ___||  _ \ / _ \ / _ \|  ___|
   / /\___ \| |_) | | | | | | | |_   
  / /_ ___) |  __/| |_| | |_| |  _|  
-/____|____/|_|    \___/ \___/|_|    ''')
-    print("\n\nTool developed by zereza\n\n")
+/____|____/|_|    \___/ \___/|_|    ''', 'red'))
+    print(colored("\n\nTool developed by zereza\n\n", 'yellow', attrs=['bold']))
     username = "USERNAME FROM SENDINBLUE HERE"
     password = "PASSWORD FROM SENDINBLUE HERE"
-    target = input("The sender's email  ---->    ")
-    name = input("\n\nThe target's name [OPTIONAL]  ---->   ")
-    sender = input("\n\nThe sender of the email   ---->   ")
-    subject = input("\n\nThe email subject  ---->   ")
-    message = input("\n\nThe email message  ---->   ")
+    target = input(colored("The target's email  ---->    ", 'green'))
+    name = input(colored("\n\nThe sender's name [OPTIONAL]  ---->   ", 'green'))
+    sender = input(colored("\n\nThe sender of the email   ---->   ", 'green'))
+    subject = input(colored("\n\nThe email subject  ---->   ", 'green'))
+    message = input(colored("\n\nThe email message  ---->   ", 'green'))
     
     if name == '':
-        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587"')
+        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" &>/dev/null')
+        print(colored('Sent :)', 'yellow'))
     else:
-        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" -o message-header="From: '+name+' <'+sender+'>"')
+        os.system('sendemail -xu '+username+' -xp '+password+' -f '+sender+' -t '+target+' -u '+subject+' -m '+message+' -s "smtp-relay.sendinblue.com:587" -o message-header="From: '+name+' <'+sender+'>" &>/dev/null')
+        print(colored('Sent :)', 'yellow'))
     
 if __name__ == '__main__':
     main()
