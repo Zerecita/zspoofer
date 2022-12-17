@@ -9,7 +9,7 @@ def main():
     print("\n\nTool developed by zereza\n\n")
     username = "USERNAME FROM SENDINBLUE HERE"
     password = "PASSWORD FROM SENDINBLUE HERE"
-    target = input("The target's email  ---->    ")
+    target = input("The sender's email  ---->    ")
     name = input("\n\nThe target's name [OPTIONAL]  ---->   ")
     sender = input("\n\nThe sender of the email   ---->   ")
     subject = input("\n\nThe email subject  ---->   ")
