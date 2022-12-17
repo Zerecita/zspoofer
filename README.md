@@ -11,7 +11,7 @@ You must have an account in [sendinblue.com](https://www.sendinblue.com).
 
 In order to use the script you will need to modify the script and put your [sendinblue](https://www.sendinblue.co) credentials here:
 ```python
-#!/usr/bin/python3/env
+#!/usr/bin/env python3
 import os
 def main():
     print(''' _________  ____   ___   ___  _____ 
