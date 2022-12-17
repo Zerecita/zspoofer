@@ -5,6 +5,8 @@ Email spoofer by zereza
 ```bash
 sudo apt install sendemail
 git clone https://github.com/0x9B0x7A/zspoofer/
+cd zspoofer
+pip3 install -r requirements.txt
 ```
 ## Usage:
 You must have an account in [sendinblue.com](https://www.sendinblue.com).
